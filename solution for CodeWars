@@ -1,0 +1,18 @@
+function digPow(n, p) {
+  const digits = n.toString(); 
+  let sum = 0;
+  
+  for (let i = 0; i < digits.length; i++) {
+    sum += Math.pow(parseInt(digits[i], 10), p + i);
+  }
+  
+  const k = sum / n;
+  
+  return Number.isInteger(k) ? k : -1;
+}
+
+
+console.log(digPow(89, 1));     // Output: 1
+console.log(digPow(92, 1));     // Output: -1
+console.log(digPow(695, 2));    // Output: 2
+console.log(digPow(46288, 3));  // Output: 51
