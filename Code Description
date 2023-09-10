@@ -1,0 +1,20 @@
+В этом коде:
+
+Мы преобразуем число n в строку, чтобы можно было перебирать его цифры.
+Инициализируем переменную sum для накопления суммы цифр, возведенных в степень p.
+Перебираем цифры числа n и для каждой цифры вычисляем digit^p, где digit - цифра в данной позиции строки, а p - текущая сила.
+Полученный результат прибавляем к сумме.
+После цикла вычисляем k путем деления суммы на n.
+Наконец, мы проверяем, является ли k целым числом, используя Number.isInteger(). Если да, то возвращаем k, в противном случае возвращаем -1.
+------------
+In this code:
+
+We convert the number n to a string so that we can iterate through its digits.
+We initialize a sum variable to accumulate the sum of digits raised to the powers of p.
+We iterate through the digits of n, and for each digit, we calculate digit^p, where digit is the digit at that position in the string, and p is the current power.
+We add the result to the sum.
+After the loop, we calculate k by dividing sum by n.
+Finally, we check if k is an integer using Number.isInteger(). If it is, we return k; otherwise, we return -1.
+--------
+
+The code is written in the Javascript language!
